@@ -1,15 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
+import Blog1Img from "../public/Blog_1.jpg";
+import Blog2Img from "../public/Blog_2.png";
+import Blog3Img from "../public/Blog_3.png";
+import Blog4Img from "../public/Blog_4.png";
+import Blog5Img from "../public/Blog_5.webp";
 
 type Blog = {
   id: number;
   title: string;
   content: string;
-  image: string;
+  image: StaticImageData | string;
   reversed?: boolean;
 };
 
@@ -20,7 +25,7 @@ const blogs = [
     content:
       "Turning a Figma design into code isn’t just about matching pixels, it’s about building something that holds up in real-world conditions. I start by extracting spacing systems, typography, and reusable patterns instead of blindly copying values. From there, I build modular React components styled with Tailwind CSS, ensuring consistency across the entire UI. I also handle edge cases early like content overflow, responsiveness across breakpoints, and accessibility. The result is not just a visually accurate UI, but one that remains stable, scalable, and maintainable as the project evolves.",
 
-    image: "/Blog_1.jpg",
+    image: Blog1Img,
     reversed: true,
   },
   {
@@ -29,7 +34,7 @@ const blogs = [
     content:
       "Most frontend issues don’t come from complex logic, they come from poor UI implementation. I’ve seen layouts break because of hardcoded values, inconsistent spacing, and misuse of breakpoints. My approach is to avoid these problems at the foundation level: I use consistent spacing scales, flexible layouts (Flexbox/Grid), and responsive utilities instead of fixed dimensions. I also prioritize reusability over quick fixes. This prevents fragile UIs and reduces the need for constant patching later in development.",
 
-    image: "/Blog_2.png",
+    image: Blog2Img,
     reversed: false,
   },
   {
@@ -38,7 +43,7 @@ const blogs = [
     content:
       "A lot of developers think reusable components are enough, they’re not. True scalability comes from designing systems, not just components. I focus on building flexible, configurable UI patterns that can adapt to multiple use cases instead of duplicating logic. For example, instead of creating separate components for every variation, I design components with props and composition in mind. This reduces code duplication, simplifies maintenance, and makes the codebase easier to extend as the application grows.",
 
-    image: "/Blog_3.png",
+    image: Blog3Img,
     reversed: true,
   },
   {
@@ -47,7 +52,7 @@ const blogs = [
     content:
       "When building real-world applications, performance and structure matter more than convenience. Next.js gives me both. With server-side rendering (SSR) and static generation (SSG), I can control how and when content is delivered, improving both performance and SEO. Features like file-based routing, API routes, and built-in image optimization remove the need for extra setup and reduce complexity. Instead of stitching together multiple tools, I can focus on building a fast, scalable product with a clean architecture.",
 
-    image: "/Blog_4.png",
+    image: Blog4Img,
     reversed: false,
   },
   {
@@ -56,7 +61,7 @@ const blogs = [
     content:
       "Performance issues are often caused by unnecessary complexity, not lack of tools. In my Next.js projects, I focus on practical optimizations that actually make a difference: lazy loading components, using dynamic imports, optimizing images, and avoiding unnecessary re-renders. I also pay attention to bundle size and remove anything that doesn’t add value. The goal isn’t to chase perfect scores, it’s to build applications that load fast, feel smooth, and handle real user interactions without lag.",
 
-    image: "/Blog_5.webp",
+    image: Blog5Img,
     reversed: true,
   },
 ];
