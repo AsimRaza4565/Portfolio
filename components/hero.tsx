@@ -10,7 +10,7 @@ const My_Info = {
   name: "Asim Raza",
   title: "Frontend Developer",
   Description:
-  "Frontend Developer building and maintaining production web applications with React, Next.js, and TypeScript, from UI development and API integration to CMS updates, performance, accessibility, and SEO improvements."
+  "Frontend Developer building and maintaining production web applications with React, Next.js, and TypeScript, from UI development and API integration to CMS updates, performance, accessibility, and SEO improvements..."
 };
 
 export default function Home() {
