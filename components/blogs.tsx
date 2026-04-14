@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
-import Blog1Img from "../public/Blog_1.jpg";
-import Blog2Img from "../public/Blog_2.png";
-import Blog3Img from "../public/Blog_3.png";
-import Blog4Img from "../public/Blog_4.png";
+import Blog1Img from "../public/Blog_1.webp";
+import Blog2Img from "../public/Blog_2.webp";
+import Blog3Img from "../public/Blog_3.webp";
+import Blog4Img from "../public/Blog_4.webp";
 import Blog5Img from "../public/Blog_5.webp";
 
 type Blog = {

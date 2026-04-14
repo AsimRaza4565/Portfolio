@@ -18,7 +18,7 @@ import {
 import { Menu, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import AsimLogo from "../public/Asim.png";
+import AsimLogo from "../public/Asim.webp";
 
 export default function Navbar() {
   return (

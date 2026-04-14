@@ -3,8 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import EduSymbol from "../public/education-symbol.svg";
-import CertSymbol from "../public/certifications-symbol.png";
+import EduSymbol from "../public/education-symbol.webp";
+import CertSymbol from "../public/certifications-symbol.webp";
 
 export default function About() {
   return (

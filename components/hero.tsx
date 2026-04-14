@@ -3,7 +3,7 @@
 import React from "react";
 import Buttons from "./button";
 import Image from "next/image";
-import AsimRazaImg from "../public/Asim_Raza.jpg";
+import AsimRazaImg from "../public/Asim_Raza.webp";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 

@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import LinkedInLogo from "../public/linkedin.png";
-import GitHubLogo from "../public/github.png";
-import InstagramLogo from "../public/instagram-logo.jpg";
+import LinkedInLogo from "../public/linkedin.webp";
+import GitHubLogo from "../public/github.webp";
+import InstagramLogo from "../public/instagram-logo.webp";
 
 export default function Footer() {
   return (

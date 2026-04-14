@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import RoleBasedImg from "../public/role-based-CRUD.png";
-import NextJsLogo from "../public/nextjs-logo.svg";
-import FigmaImg from "../public/Figma.png";
-import CSSLogo from "../public/CSS-Logo.png";
-import ThreeStepImg from "../public/3-step-form.png";
-import JSLogo from "../public/javascript-logo.png";
+import RoleBasedImg from "../public/role-based-CRUD.webp";
+import NextJsLogo from "../public/nextjs-logo.webp";
+import FigmaImg from "../public/Figma.webp";
+import CSSLogo from "../public/CSS-Logo.webp";
+import ThreeStepImg from "../public/3-step-form.webp";
+import JSLogo from "../public/javascript-logo.webp";
 
 const Project_Info = {
   Project_1: "Full-stack RBAC system with secure authentication and CRUD operations, built with Next.js and MongoDB. Features scalable architecture and a modern, responsive frontend.",

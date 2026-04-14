@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import RevnixLogo from "../public/revnix-logo.png";
-import BispLogo from "../public/bisp-logo.png";
+import RevnixLogo from "../public/revnix-logo.webp";
+import BispLogo from "../public/bisp-logo.webp";
 
 const experiences = {
   experience_1: {
