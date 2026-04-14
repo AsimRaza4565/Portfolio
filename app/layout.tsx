@@ -14,6 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://asimraza.me"),
+  icons: {
+    icon: [
+      {
+        url: "/Asim_Raza_rounded.webp?v=1",
+        type: "image/webp",
+        sizes: "any",
+      },
+    ],
+    shortcut: [{ url: "/Asim_Raza_rounded.webp?v=1", type: "image/webp" }],
+    apple: [{ url: "/Asim_Raza.webp?v=1", type: "image/webp" }],
+  },
   title: {
     default: "Asim Raza | Software Engineer & Frontend Developer",
     template: "%s | Asim Raza",
