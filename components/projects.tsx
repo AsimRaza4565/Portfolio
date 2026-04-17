@@ -134,7 +134,7 @@ export default function Projects() {
               height={42}
               width={42}
               alt="JS Logo"
-              className="absolute top-[-28] left-[-28] rotate-325 rounded-lg"
+              className="absolute top-[-24] left-[-24] rotate-325 rounded-lg"
             />
             <p className="p-4 text-white text-lg md:min-h-[120] sm:h-auto text-left">
               {Project_Info.Project_3}
