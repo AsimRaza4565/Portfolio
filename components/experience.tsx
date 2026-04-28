@@ -76,7 +76,7 @@ export default function Experience() {
         </motion.p>
 
         {experiences.map((exp, index) => (
-          <div key={exp.id}>
+          <div key={exp.id} className="mb-16 lg:mb-8">
             <motion.div
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function Experience() {
                 ease: "easeOut",
               }}
             >
-              <h2 className="xs:text-2xl sm:text-3xl lg:text-4xl pb-2 font-semibold text-yellow-500">
+              <h2 className="xs:text-2xl sm:text-3xl pb-2 font-semibold text-yellow-500">
                 {exp.title}
               </h2>
               <span className="text-md font-semibold text-gray-400">
@@ -100,8 +100,8 @@ export default function Experience() {
               )}
             </motion.div>
 
-            <div className={`flex items-center xs:gap-4 ${index === 0 ? "mb-8 " : ""}lg:flex-row xs:flex-col`}>
-              <p className={`pt-3 text-lg lg:w-2/3 ${index === 0 ? "xs:w-full" : "sm:w-full"} sm:pb-8 text-white`}>
+            <div className={`flex items-center xs:gap-4 mb-8 lg:flex-row xs:flex-col`}>
+              <p className={`py-4 text-lg lg:w-2/3 ${index === 0 ? "xs:w-full" : "sm:w-full"} text-white`}>
                 {exp.desc}
               </p>
 
@@ -112,7 +112,7 @@ export default function Experience() {
                   duration: 1,
                   ease: "easeOut",
                 }}
-                className="lg:w-1/3 xs:w-full flex justify-center relative -translate-y-4 sm:-translate-y-6 lg:-translate-y-8"
+                className="lg:w-1/3 xs:w-full flex justify-center"
               >
                 <Link
                   href={exp.href}
@@ -121,10 +121,10 @@ export default function Experience() {
                 >
                   <Image
                     src={exp.logo}
-                    width={200}
-                    height={200}
+                    width={180}
+                    height={180}
                     alt={exp.alt}
-                    className={exp.logoClassName || undefined}
+                    className={exp.logoClassName}
                   />
                 </Link>
               </motion.div>
