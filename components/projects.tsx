@@ -64,6 +64,7 @@ export default function Projects() {
                 width={768}
                 height={200}
                 alt="Role-Based CRUD"
+                title="Role-Based CRUD Project Thumbnail"
                 className="w-full h-full"
               ></Image>
             </div>
@@ -72,6 +73,7 @@ export default function Projects() {
               height={50}
               width={50}
               alt="Next.js Logo"
+              title="Built with Next.js Framework"
               className="absolute top-[-24] left-[-24] rotate-325 rounded-full"
             />
             <p className="p-4 text-white text-lg md:min-h-[120] sm:h-auto text-left">
@@ -95,6 +97,7 @@ export default function Projects() {
                 width={768}
                 height={200}
                 alt="Figma to Web"
+                title="Figma to Web Project Thumbnail"
                 className="w-full h-full"
               ></Image>
             </div>
@@ -103,6 +106,7 @@ export default function Projects() {
               height={58}
               width={58}
               alt="CSS Logo"
+              title="Styled with Custom CSS"
               className="absolute top-[-28] left-[-28] rotate-325"
             />
             <p className="p-4 text-white text-lg md:min-h-[120] sm:h-auto text-left">
@@ -126,6 +130,7 @@ export default function Projects() {
                 width={768}
                 height={200}
                 alt="3-step-form"
+                title="3-step-form Project Thumbnail"
                 className="w-full h-full"
               ></Image>
             </div>
@@ -134,6 +139,7 @@ export default function Projects() {
               height={42}
               width={42}
               alt="JS Logo"
+              title="Built with modern JavaScript"
               className="absolute top-[-24] left-[-24] rotate-325 rounded-lg"
             />
             <p className="p-4 text-white text-lg md:min-h-[120] sm:h-auto text-left">

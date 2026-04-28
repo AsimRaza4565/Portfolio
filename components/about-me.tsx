@@ -36,6 +36,7 @@ export default function About() {
               <Image
                 src={EduSymbol}
                 alt="education-symbol"
+                title="Education"
                 width={30}
                 height={30}
               ></Image>
@@ -57,7 +58,8 @@ export default function About() {
               <h3 className="text-xl font-semibold">Training & Certifications</h3>
               <Image
                 src={CertSymbol}
-                alt="education-symbol"
+                alt="certifications-symbol"
+                title="Training & Certifications"
                 width={30}
                 height={30}
               ></Image>

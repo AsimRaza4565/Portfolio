@@ -15,6 +15,7 @@ type Blog = {
   title: string;
   content: string;
   image: StaticImageData | string;
+  altText: string;
   reversed?: boolean;
 };
 
@@ -24,8 +25,8 @@ const blogs = [
     title: "From Figma to Production: How I Build Responsive UIs That Don’t Break",
     content:
       "Turning a Figma design into code isn’t just about matching pixels, it’s about building something that holds up in real-world conditions. I start by extracting spacing systems, typography, and reusable patterns instead of blindly copying values. From there, I build modular React components styled with Tailwind CSS, ensuring consistency across the entire UI. I also handle edge cases early like content overflow, responsiveness across breakpoints, and accessibility. The result is not just a visually accurate UI, but one that remains stable, scalable, and maintainable as the project evolves.",
-
     image: Blog1Img,
+    altText: "Figma design translated into responsive web components",
     reversed: true,
   },
   {
@@ -33,8 +34,8 @@ const blogs = [
     title: "Common Figma-to-Code Mistakes That Break Layouts (and How I Avoid Them)",
     content:
       "Most frontend issues don’t come from complex logic, they come from poor UI implementation. I’ve seen layouts break because of hardcoded values, inconsistent spacing, and misuse of breakpoints. My approach is to avoid these problems at the foundation level: I use consistent spacing scales, flexible layouts (Flexbox/Grid), and responsive utilities instead of fixed dimensions. I also prioritize reusability over quick fixes. This prevents fragile UIs and reduces the need for constant patching later in development.",
-
     image: Blog2Img,
+    altText: "Fixing broken layout problems in web design",
     reversed: false,
   },
   {
@@ -42,8 +43,8 @@ const blogs = [
     title: "Building Scalable React UIs: Why Reusability Is More Than Just Components",
     content:
       "A lot of developers think reusable components are enough, they’re not. True scalability comes from designing systems, not just components. I focus on building flexible, configurable UI patterns that can adapt to multiple use cases instead of duplicating logic. For example, instead of creating separate components for every variation, I design components with props and composition in mind. This reduces code duplication, simplifies maintenance, and makes the codebase easier to extend as the application grows.",
-
     image: Blog3Img,
+    altText: "Designing scalable and reusable React component systems",
     reversed: true,
   },
   {
@@ -51,8 +52,8 @@ const blogs = [
     title: "Why Next.js Is My Default Choice for Production Applications",
     content:
       "When building real-world applications, performance and structure matter more than convenience. Next.js gives me both. With server-side rendering (SSR) and static generation (SSG), I can control how and when content is delivered, improving both performance and SEO. Features like file-based routing, API routes, and built-in image optimization remove the need for extra setup and reduce complexity. Instead of stitching together multiple tools, I can focus on building a fast, scalable product with a clean architecture.",
-
     image: Blog4Img,
+    altText: "Next.js performance features and architecture benefits",
     reversed: false,
   },
   {
@@ -60,8 +61,8 @@ const blogs = [
     title: "How I Improve Performance in Next.js Applications (Without Overengineering)",
     content:
       "Performance issues are often caused by unnecessary complexity, not lack of tools. In my Next.js projects, I focus on practical optimizations that actually make a difference: lazy loading components, using dynamic imports, optimizing images, and avoiding unnecessary re-renders. I also pay attention to bundle size and remove anything that doesn’t add value. The goal isn’t to chase perfect scores, it’s to build applications that load fast, feel smooth, and handle real user interactions without lag.",
-
     image: Blog5Img,
+    altText: "Optimizing Next.js application performance practically",
     reversed: true,
   },
 ];
@@ -127,7 +128,8 @@ function BlogCard({ blog }: { blog: Blog; index: number }) {
           src={blog.image}
           width={400}
           height={300}
-          alt={`blog_${blog.id}_image`}
+          alt={blog.altText}
+          title={blog.title}
           className={`h-full w-full xs:rounded-t-md lg:rounded-none ${
             blog.reversed ? "lg:rounded-r-md" : "lg:rounded-l-md"
           }`}
@@ -155,12 +157,6 @@ function BlogCard({ blog }: { blog: Blog; index: number }) {
             )}
           </p>
         </div>
-        {/* <Link
-          href="#"
-          className="self-end pr-2 text-blue-700 underline hover:no-underline hover:text-blue-900"
-        >
-          Read More
-        </Link> */}
       </div>
     </motion.div>
   );

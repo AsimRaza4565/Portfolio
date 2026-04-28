@@ -32,6 +32,7 @@ export default function Navbar() {
             <Image
               src={AsimLogo}
               alt="Author Asim-Raza"
+              title="Asim Raza"
               width={136}
               height={36}
             />

@@ -66,6 +66,7 @@ export default function Home() {
             <Image
               src={AsimRazaImg}
               alt="Asim Raza"
+              title="Asim Raza Profile"
               width={286}
               height={286}
               className="border-2 border-gray-400 rounded-full shadow-lg shadow-gray-500 hover:scale-101 transition-transform duration-500 ease-in-out"

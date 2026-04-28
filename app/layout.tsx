@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://asimraza.me"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       {
@@ -59,6 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@AsimRaza4565",
     title: "Asim Raza | Software Engineer & Frontend Developer",
     description: "Personal portfolio of Asim Raza, a specialized Software Engineer and Frontend Developer crafting modern, high-performance web applications.",
     images: ["/Asim_Raza.webp"],

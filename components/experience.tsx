@@ -18,6 +18,7 @@ const experiences = [
     logo: RevnixLogo,
     href: "https://www.revnix.com",
     alt: "Revnix Logo",
+    logoTitle: "Revnix Technologies",
     logoClassName: "rounded-full shadow-md shadow-yellow-500",
   },
   {
@@ -28,6 +29,7 @@ const experiences = [
     logo: RhombixLogo,
     href: "https://www.rhombixtechnologies.com",
     alt: "Rhombix Logo",
+    logoTitle: "Rhombix Technologies",
     logoClassName: "",
   },
   {
@@ -39,6 +41,7 @@ const experiences = [
     logo: BispLogo,
     href: "https://bisp.gov.pk",
     alt: "BISP Logo",
+    logoTitle: "BISP Organization",
     logoClassName: "",
   },
 ];
@@ -124,6 +127,7 @@ export default function Experience() {
                     width={180}
                     height={180}
                     alt={exp.alt}
+                    title={exp.logoTitle}
                     className={exp.logoClassName}
                   />
                 </Link>

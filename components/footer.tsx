@@ -71,6 +71,7 @@ export default function Footer() {
               width={48}
               height={48}
               alt="Asim Raza LinkedIn Profile"
+              title="LinkedIn Profile"
               className="w-full rounded-full"
             ></Image>
           </Link>
@@ -86,6 +87,7 @@ export default function Footer() {
               width={48}
               height={48}
               alt="Asim Raza Github Profile"
+              title="Github Profile"
               className="hover:bg-yellow-200 rounded-full w-full"
             ></Image>
           </Link>
@@ -101,6 +103,7 @@ export default function Footer() {
               width={36}
               height={36}
               alt="Asim Raza Instagram Profile"
+              title="Instagram Profile"
               className="w-full rounded-md"
             ></Image>
           </Link>
