@@ -72,7 +72,7 @@ export default function About() {
               Frontend Web Development Trainee
             </h3>
             <p className="text-gray-500">
-              Revnix Technologies • Haripur • April 2025 – December 2025
+              Revnix Technologies • Haripur • April 2025 – September 2025
             </p>
             <h3 className="text-lg font-semibold mt-2">
               Web Development Intern
